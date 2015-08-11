@@ -1,0 +1,25 @@
+A sample run of the program is as shown
+
+Enter the message to be encrypted...Hello World!
+!lo ledrWolH
+
+As is evident the program has taken all characters inside the string "Hello World!" including spaces and rearranged them into supposedly nonsensical text.
+
+If we look at the indices of the plain text ---
+					
+					H e l l o   W o r l d  !
+					0 1 2 3 4 5 6 7 8 9 10 11
+
+And the corresponding ones in the ciphertext ---
+				    0 1 2 3 4 5 6 7 8 9  10 11
+					! l o   l e d  r W o l  H
+				   11 9 7 5 3 1 10 8 6 4 2  0
+				   
+It isn't hard to notice that the characters with odd indices have been sent to the head of the string and the ones with odd indices at the tail of the ciphertext.
+
+So, First off we need to figure out the index from where to split the cipher text into two parts - one that had odd indices initially and the other with even indices originally.
+Then we need to append each character into a list or tuple or even a string, taking one character from each cipher-half string. Then of course the string has been decrypted
+and can be printed on to the screen or copied to the clipboard as the encryptor does.
+
+
+If you think that you've done it, commit your decryptor with your name either in a comment or in the filename the repository or if you don't use Github, mail it to me at msfjarvis@hmamail.com
