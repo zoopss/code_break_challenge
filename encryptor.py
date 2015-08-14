@@ -13,6 +13,6 @@ while i >= 0 :
         translated2 = translated2 + message[i]
     i = i-1
 
-translated = translated2 + translated1
+translated = translated1 + translated2
 print translated
 pyperclip.copy(translated)
